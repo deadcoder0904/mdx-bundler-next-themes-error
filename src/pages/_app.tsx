@@ -19,8 +19,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				<meta name="msapplication-TileColor" content="#00aba9" />
 				<title>Mdx Bundler Next Themes error</title>
 			</Head>
-			<Nav />
 			<ThemeProvider attribute="class" themes={['light', 'dark']}>
+				<Nav />
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</>
